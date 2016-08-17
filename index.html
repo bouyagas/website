@@ -18,32 +18,29 @@
 
      body {
        color: blue;
-       background-color: black;
        text-align: center;
+       font-family: cursive;
        -webkit-animation-name: example; /* Chrome, Safari, Opera */
        -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
        animation-iteration-count: infinite;
        animation-name: example;
-       animation-duration: 4s;
+       animation-duration:  30s;
        animation-iteration-count: infinite;
      }
 
 
      @-webkit-keyframes example {
-       from {background-color: black;}
-       to {background-color: white;}
+       from {background-color: rgba(0, 0, 0, 0.3);}
+       to {background-color: black;}
      }
 
 /* Standard syntax */
      @keyframes example {
-      from {background-color: black;}
-       to {background-color: white;}
+      from {background-color: rgba(0, 0, 0, 0.3);}
+       to {background-color:black;}
     } 
 
-     h1 {
-       padding-top: 26px;
-     }
-
+     
      h1, p{
        font-size: 32px;
      }
@@ -74,7 +71,7 @@
       }
       
       li a:hover{
-        color: yellow;
+        color: cyan;
       }
 
      </style>
