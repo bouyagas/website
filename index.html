@@ -20,7 +20,25 @@
        color: blue;
        background-color: black;
        text-align: center;
+       -webkit-animation-name: example; /* Chrome, Safari, Opera */
+       -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+       animation-iteration-count: infinite;
+       animation-name: example;
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
      }
+
+
+     @-webkit-keyframes example {
+       from {background-color: black;}
+       to {background-color: white;}
+     }
+
+/* Standard syntax */
+     @keyframes example {
+      from {background-color: black;}
+       to {background-color: white;}
+    } 
 
      h1 {
        padding-top: 26px;
@@ -73,7 +91,7 @@
           
           <ul>
            <li><a href="http://www.google.com">Google</a></li>
-           <li><a href="http://www.apple.com">Apple</a></li>
+           <li><a href="http://www.toyota.com/">Toyota</a></li>
            <li><a href="http://www.bananarepublic.com">Banana Republic</a></li>
            <li><a href="https://www.capitalone.com/">Capital One</a></li>
            <li><a href="http://www.facebook>com">Facebook</a></li>
@@ -100,15 +118,15 @@
 
          <ul>
            <li><a href="http://www.yelp.com">Yelp</a></li>
-           <li><a href="http://www.vh1.com">VH1</a></li>
+           <li><a href="http://www.vh1.com">VH1</a></li>  
            <li><a href="http://www.truereligion.com/">TR</a></li>
            <li><a href="http://www.espn.com">ESPN</a></li>
          </ul>
 
         <ul>
            <li><a href="http://www.target.com">Target</a></li>
-            <li><a href="http://www.zara.com">Zara</a></li>
-           <li><a href="http://www.toyota.com/">Toyota</a></li>
+           <li><a href="http://www.zara.com">Zara</a></li>
+           <li><a href="http://www.apple.com">Apple</a></li>
          </ul>
     
 
