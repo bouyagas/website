@@ -3,15 +3,28 @@
    <head>
      <title>Welcome</title>
 
-
+     <script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+     </script>
+     
      <script>
+      $(document).ready(function(){
 
-     window.onload = function() {
+           $("a").mouseenter(function() {
+              $(this).hide(5000);
+            });
 
-       
-        
-       };
-
+           $("a").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function(){
+                    $(this).css("background-color", "yellow");
+                }
+             });
+        });
       </script>
 
      <style>
@@ -80,9 +93,8 @@
 
    <body>
 
-
        <h1> Welcome to my site </h1>
-        <p id="demo"></p>
+
       <div>
          <h2>List of my Sites</h2>
           
