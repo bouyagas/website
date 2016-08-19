@@ -9,19 +9,26 @@
      <script>
       $(document).ready(function(){
 
-           $("a").mouseenter(function() {
-              $(this).hide(5000);
-            });
+          $("a").on({
+                mouseleave: function(){
+                    $(this).hide(5000);
+                }
+
+              });
 
            $("a").on({
                 mouseenter: function(){
-                    $(this).css("background-color", "lightgray");
+                    $(this).css(" background-color", "lightgray");
+                     $(this).css("border-radius", "30px");
                 },
                 mouseleave: function(){
                     $(this).css("background-color", "lightblue");
+                    $(this).css("border-radius", "30px");
                 },
                 click: function(){
                     $(this).css("background-color", "yellow");
+                     $(this).css("border-radius", "30px");
+
                 }
              });
         });
